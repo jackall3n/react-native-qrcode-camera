@@ -1,4 +1,8 @@
 {
   "name" : "react-native-qrcode-camera",
-  "version" : "0.0.1"
+  "version" : "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackall3n/react-native-qrcode-camera.git"
+  }
 }
