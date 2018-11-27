@@ -1,17 +1,36 @@
 import React, {Component} from 'react';
-import {RNCamera as Camera} from 'react-native-camera';
+import {
+    Vibration
+} from 'react-native';
 
-class QRCamera extends Component {
+import {RNCamera as Camera} from 'react-native-camera';
+import PropTypes from 'prop-types';
+
+class QRCodeCamera extends Component {
+
+    onScan = event => {
+        this.props.vibrate && Vibration.vibrate();
+        this.props.onScan && this.props.onScan(event);
+    };
+
     render() {
         return (
-            <Camera />
+            <Camera style={this.props.style}
+                    onBarCodeRead={this.onScan}
+            />
         )
     }
 }
 
-QRCamera.propTypes = {};
+QRCodeCamera.propTypes = {
+    onScan: PropTypes.func,
+    style: PropTypes.object,
+    vibrate: PropTypes.bool
+};
 
-QRCamera.defaultProps = {};
+QRCodeCamera.defaultProps = {
+    vibrate: true
+};
 
-export {QRCamera};
-export default QRCamera;
+export {QRCodeCamera};
+export default QRCodeCamera;
