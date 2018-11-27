@@ -8,7 +8,7 @@ Please follow the instructions on installing the [React Native Camera](https://g
 
 ## Example Usage
 
-```
+```js
 import React, { Component } from 'react';
 import QRCodeCamera from 'react-native-qrcode-camera';
 
@@ -22,7 +22,7 @@ class Camera extends Component {
         return (
             <QRCodeCamera onScan={this.onScan}
                           vibrate={true}
-                          style={/* styles */} />
+                          style={{ flex: 1 }} />
         );
     } 
 }
