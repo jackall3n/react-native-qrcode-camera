@@ -4,6 +4,13 @@
 [React Native Camera](https://www.npmjs.com/package/react-native-camera)
 
 ## Installation
+
+`npm i react-native-qrcode-camera --save`
+
+or
+
+`yarn add react-native-qrcode-camera`
+
 Please follow the instructions on installing the [React Native Camera](https://github.com/react-native-community/react-native-camera#getting-started)
 
 ## Example Usage
