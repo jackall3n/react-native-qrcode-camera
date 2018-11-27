@@ -1,13 +1,10 @@
 {
   "name": "react-native-qrcode-camera",
   "description": "A simple QR code wrapper of the React Native camera.",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "main": "index.js",
   "author": "Jack Allen",
   "license": "MIT",
-  "scripts": {
-    "publish": "npm publish"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jackall3n/react-native-qrcode-camera.git"
